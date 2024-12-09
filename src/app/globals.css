@@ -1,63 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* For small screens (mobile) */
 @media (max-width: 640px) {
   body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
   }
   
-  /* Make sure no elements exceed the screen width */
   .your-class {
     max-width: 100%;
     box-sizing: border-box;
   }
 
-  /* Optional: Adjust the height or padding of elements */
   .your-element {
     height: auto;
     padding: 10px;
   }
 }
 
-/* For medium and large screens */
 @media (min-width: 641px) {
   body {
-    overflow-x: visible; /* Allow horizontal scrolling on larger screens */
-  }
-}
-
-
-
-
-
-
-
-
-
-
-/* Global Styles to Prevent Scrolling */
+    overflow-x: visible; 
+  }}
 *,
 *::before,
 *::after {
-  box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+  box-sizing: border-box; 
 }
 
 html, body {
   height: 100%;
   margin: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
 }
 
-/* For mobile devices */
 @media (max-width: 640px) {
   body {
-    overflow: hidden; /* Prevent any scrolling */
-    position: fixed;  /* Fix the body position to avoid scrolling */
+    /* overflow: hidden;  */
+    position: fixed;
     width: 100%;
   }
   
-  /* Adjust container or elements to fit within screen */
   .container, .your-class, .your-element {
     width: 100%;
     height: auto;
