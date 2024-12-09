@@ -23,6 +23,8 @@ export default function ProductsPageList() {
             src="/images/product1.jpg" // Replace with your product image path
             alt="Product 1"
             className="w-full h-64 object-cover"
+            height={300}
+            width={400}
           />
           <div className="p-4">
             <h3 className="text-lg font-semibold">Product 1</h3>
@@ -58,6 +60,8 @@ export default function ProductsPageList() {
             src="/images/product2.jpg" // Replace with your product image path
             alt="Product 2"
             className="w-full h-64 object-cover"
+            width={300}
+            height={300}
           />
           <div className="p-4">
             <h3 className="text-lg font-semibold">Product 2</h3>
@@ -93,6 +97,8 @@ export default function ProductsPageList() {
             src="/images/product3.jpg" // Replace with your product image path
             alt="Product 3"
             className="w-full h-64 object-cover"
+            height={300}
+            width={300}
           />
           <div className="p-4">
             <h3 className="text-lg font-semibold">Product 3</h3>
@@ -128,6 +134,8 @@ export default function ProductsPageList() {
             src="/images/product4.jpg" // Replace with your product image path
             alt="Product 4"
             className="w-full h-64 object-cover"
+            height={200}
+            width={200}
           />
           <div className="p-4">
             <h3 className="text-lg font-semibold">Product 4</h3>
@@ -163,6 +171,8 @@ export default function ProductsPageList() {
             src="/images/product5.jpg" // Replace with your product image path
             alt="Product 5"
             className="w-full h-64 object-cover"
+            height={300}
+            width={300}
           />
           <div className="p-4">
             <h3 className="text-lg font-semibold">Product 5</h3>

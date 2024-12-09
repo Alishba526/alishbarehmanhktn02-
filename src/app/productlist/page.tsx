@@ -3,17 +3,6 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import React from 'react';
 import Image from 'next/image';
 import Footer from "../components/Footer";
-
-
-
-
-
-
-
-
-
-
-
 const products = [
   { id: 1, name: 'Product 1', price: 10.99, image: '/card-item (1).png' },
   { id: 2, name: 'Product 2', price: 20.99, image: '/card-item (2).png' },
@@ -55,8 +44,13 @@ const Products = () => {
           <h2 className="font-semibold text-2xl mt-0 text-center">Views</h2>
         </div>
         <div className="flex items-center gap-2">
-          <Image src="/btn-sm-24.png" alt="Button 1" />
-          <Image src="/btn-sm-24 (1).png" alt="Button 2" />
+          <Image src="/btn-sm-24.png" alt="Button 1" 
+          height={24} width={24} 
+          className="h-8 w-8"/>
+          
+          <Image src="/btn-sm-24 (1).png" alt="Button 2"
+          height={70}
+          width={50} />
         </div>
         <div className="flex items-center gap-2">
           <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded">Popularity</button>
@@ -66,7 +60,10 @@ const Products = () => {
 
       {/* Bandage and social icons */}
       <div>
-        <Image src="/desktop-clients-1 (1).png" alt="Bandage" className="mb-8 h-auto" />
+        <Image src="/desktop-clients-1 (1).png" alt="Bandage" className="mb-8 h-auto"
+        height={500}
+        width={300}
+         />
         <h1 className="font-semibold text-2xl mt-0 ml-12 h-auto">Bandage</h1>
 
         {/* Social Media Icons on the right */}

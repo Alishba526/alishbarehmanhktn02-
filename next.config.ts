@@ -1,9 +1,28 @@
-import { NextConfig } from "next";
+// import { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+// const nextConfig: NextConfig = {
+//   images: {
+//     domains: ['your-image-domain.com'], // Add external domains here
+//   },
+// };
+// export default nextConfig;
+// // Replace 'your-image-domain.com' with the actual domain of your images
+
+
+
+
+
+
+
+
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    domains: ['your-image-domain.com'], // Add external domains here
+    domains: [
+      "th.bing.com", // Add your external domains here
+    ],
   },
 };
-export default nextConfig;
-// Replace 'your-image-domain.com' with the actual domain of your images
+
+module.exports = nextConfig;

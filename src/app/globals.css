@@ -1,6 +1,13 @@
-@tailwind base;
+  @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
+
+
 @media (max-width: 640px) {
   body {
     overflow-x: hidden;
@@ -35,9 +42,9 @@ html, body {
 
 @media (max-width: 640px) {
   body {
-    /* overflow: hidden;  */
-    position: fixed;
-    width: 100%;
+  
+    
+     width: 100%;
   }
   
   .container, .your-class, .your-element {
@@ -45,4 +52,38 @@ html, body {
     height: auto;
     max-width: 100%;
   }
-}
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

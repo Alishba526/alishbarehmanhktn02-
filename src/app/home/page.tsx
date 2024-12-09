@@ -1,10 +1,16 @@
 
-"use client"
+
+
+
+
+
+
+"use client";
 import Image from "next/image";
 import couples from "../../../public/chinaboygirl.png";
 import { useState } from "react";
 
-// Herosection component
+// Hero Section Component
 const Herosection = () => {
   const productData = [
     { name: 'Product 1', price: '$20', image: '/sec1.png' },
@@ -29,7 +35,7 @@ const Herosection = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative w-full h-[716px] bg-cover">
+      <div className="relative w-full h-[50vh] sm:h-[716px] bg-cover">
         <div
           className="relative w-full h-full"
           style={{
@@ -44,22 +50,16 @@ const Herosection = () => {
               <h5 className="font-montserrat font-bold text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] tracking-[0.1px]">
                 SUMMER 2020
               </h5>
-              <h1 className="font-montserrat font-bold text-[40px] sm:text-[58px] leading-[56px] sm:leading-[80px] tracking-[0.2px]">
+              <h1 className="font-montserrat font-bold text-[30px] sm:text-[58px] leading-[40px] sm:leading-[80px] tracking-[0.2px]">
                 NEW COLLECTION
               </h1>
-              <h4 className="font-montserrat font-normal text-[16px] sm:text-[20px] leading-[24px] sm:leading-[30px] tracking-[0.2px] w-full sm:w-[376px]">
+              <h4 className="font-montserrat font-normal text-[14px] sm:text-[20px] leading-[20px] sm:leading-[30px] tracking-[0.2px] w-full sm:w-[376px]">
                 We know how large objects will act, but things on a small scale.
               </h4>
               <br />
-              {/* <button className="w-full sm:w-[170] bg-[#2DC071] py-[12px] sm:px-[40px] px-[30px] rounded-[5px] gap-[10px] text-white font-montserrat">
+              <button className="w-[60%] sm:w-[170px] bg-[#2DC071] py-[12px] sm:px-[40px] px-[30px] rounded-[5px] gap-[10px] text-white font-montserrat">
                 Shop Now
-              </button> */}
-
-<button className="w-[40%] sm:w-[170px] bg-[#2DC071] py-[12px] sm:px-[40px] px-[30px] rounded-[5px] gap-[10px] text-white font-montserrat">
-  Shop Now
-</button>
-
-
+              </button>
             </div>
           </div>
         </div>
@@ -102,31 +102,31 @@ const Herosection = () => {
       </section>
 
       {/* Green Section */}
-      <div className="w-full bg-[#23856D] mt-[50px] py-[80px]">
-        <div className="max-w-screen-xl mx-auto flex gap-[80px]">
-          <div className="flex-1 pt-[60px]">
-            <h4 className="font-Montserrat font-normal text-[20px] leading-[30px] text-white">
-              SUMMER 2020
-            </h4>
-            <h1 className="font-Montserrat font-bold text-[58px] leading-[80px] text-white">
+      <div className="w-full bg-[#23856D] py-10 lg:py-20">
+        <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center gap-10 px-6 lg:px-12">
+          <div className="flex-1 text-center lg:text-left">
+            <h4 className="text-[16px] font-Montserrat font-medium leading-6 text-white">SUMMER 2020</h4>
+            <h1 className="text-[32px] lg:text-[58px] font-Montserrat font-bold leading-10 lg:leading-[72px] text-white mt-2">
               Vita Classic Product
             </h1>
-            <p className="font-Montserrat font-medium text-[14px] leading-[20px] text-white">
-              We know how large objects will act, We know how are objects will act, We know
+            <p className="text-[14px] lg:text-[16px] font-Montserrat font-medium leading-6 text-white mt-4">
+              Discover the perfection of our products.
             </p>
-            <div className="flex gap-[34px] mt-6">
-              <h3 className="font-Montserrat font-bold text-[24px] leading-[32px] text-white">
-                $16.48
-              </h3>
-              <button className="rounded-[5px] px-[40px] bg-[#2DC071] py-[15px] flex gap-[10px]">
-                <h1 className="font-Montserrat text-[14px] leading-[22px] text-white flex justify-center">
-                  ADD TO CART
-                </h1>
+            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 mt-6">
+              <h3 className="text-[24px] font-Montserrat font-bold text-white">$16.48</h3>
+              <button className="bg-[#2DC071] text-white font-Montserrat font-medium px-6 py-3 rounded-md">
+                ADD TO CART
               </button>
             </div>
           </div>
           <div className="flex-1">
-            <Image src="/greenman.png" alt="Green Man" width={500} height={500} />
+            <Image
+              src="/greenman.png"
+              alt="Green Man"
+              width={500}
+              height={500}
+              className="mx-auto lg:mx-0"
+            />
           </div>
         </div>
       </div>
@@ -139,8 +139,7 @@ const Herosection = () => {
             <Image
               src={couples}
               alt="couple"
-              className="object-contain"
-              style={{ width: "100%", height: "auto" }}
+              className="object-cover w-full h-full"
             />
           </div>
 
@@ -152,7 +151,7 @@ const Herosection = () => {
             <h2 className="lg:w-[375px] text-[24px] lg:text-[40px] font-Montserrat font-bold leading-[32px] lg:leading-[50px] text-[#252B42]">
               Part of the Neural Universe
             </h2>
-            <h4 className=" lg:w-[375px] text-[16px] lg:text-[20px] font-Montserrat font-normal leading-[24px] lg:leading-[30px] text-[#737373]">
+            <h4 className="lg:w-[375px] text-[16px] lg:text-[20px] font-Montserrat font-normal leading-[24px] lg:leading-[30px] text-[#737373]">
               We know how large objects will act, but things on a small scale.
             </h4>
             <div className="flex flex-wrap justify-center lg:justify-start gap-[10px]">
@@ -175,4 +174,3 @@ const Herosection = () => {
 };
 
 export default Herosection;
-

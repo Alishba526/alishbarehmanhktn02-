@@ -68,7 +68,7 @@ export default function Navbar() {
 
         {/* Right Side: Login/Register, Icons */}
         <div className="flex items-center space-x-6">
-          <Link href="/login" className="hidden sm:block">Login</Link>
+          <Link href="/contact" className="hidden sm:block">Login</Link>
           <Link href="/details" className="hidden sm:block">detail</Link>
           <div className="flex items-center space-x-4">
             <Search size={24} className="cursor-pointer" />
@@ -82,7 +82,7 @@ export default function Navbar() {
       <div className={`sm:hidden ${menuOpen ? 'block' : 'hidden'}`}>
         <div className="flex flex-col items-center space-y-3 bg-blue-600 p-4">
           <Link href="/home" className="text-white">Home</Link>
-          <Link href="/shop" className="text-white">Shop</Link>
+          <Link href="/productlist" className="text-white">Shop</Link>
           <Link href="/about" className="text-white">About</Link>
           <Link href="/price" className="text-white">price</Link>
           <Link href="/contact" className="text-white">Contact</Link>
