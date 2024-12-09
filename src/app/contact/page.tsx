@@ -38,9 +38,11 @@ export default function StatsSection() {
         {/* Image on the Right */}
         <div className="lg:w-1/2 sm:w-1/3 w-full mt-6 sm:mt-0">
           <Image 
-            src="alishbarehman.jpg" // Replace this with your image URL
+            src="/alishbarehman.jpg" // Replace this with your image URL
             alt="Example"
             className="w-full h-auto rounded-lg"
+            width="500"
+            height="400"
           />
         </div>
 

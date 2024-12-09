@@ -3,7 +3,7 @@ import { Facebook, Instagram, Mail, Phone, Twitter } from "lucide-react";
 // components/Topbar.tsx (updated with responsiveness)
 export default function Topbar() {
     return (
-      <div className="bg-gray-600 text-white py-2">
+      <div className="bg-gray-800 text-white py-2">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex space-x-4">
             <a href="tel:+1234567890" className="flex items-center space-x-2">

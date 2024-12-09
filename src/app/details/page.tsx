@@ -20,9 +20,11 @@ const Details = () => {
         {/* Main Product Details */}
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <Image
+                      src="/sofa1.png"
             alt="ecommerce"
+            width={400}
+            height={400}
             className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-            src="/sofa1.png"
           />
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
@@ -93,6 +95,8 @@ const Details = () => {
             alt="detail"
             className="w-full lg:w-1/2 h-64 object-cover object-center rounded"
             src="/col-md-4 (3).png"
+            width={500}
+            height={500}
           
           />
           <div className="lg:w-1/2 w-full lg:pl-10 py-6">
@@ -112,6 +116,8 @@ const Details = () => {
                   alt="product"
                   className="w-full h-64 object-cover object-center mb-4 rounded"
                   src={product.image}
+                  width={500}
+                  height={500}
                 />
                 <h2 className="text-xl text-gray-900 font-medium title-font">{product.name}</h2>
                 <p className="leading-relaxed mb-3">This is a short description of the product.</p>
@@ -130,6 +136,8 @@ const Details = () => {
             alt="footer"
             className="w-full lg:w-1/2 h-64 object-cover object-center rounded"
             src="/alishbarehman.jpg"
+            height={500}
+            width={500}
           />
         </div>
       </div>
