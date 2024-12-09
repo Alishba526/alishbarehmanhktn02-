@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['your-image-domain.com'], // Add external domains here
+  },
 };
-
 export default nextConfig;
+// Replace 'your-image-domain.com' with the actual domain of your images
