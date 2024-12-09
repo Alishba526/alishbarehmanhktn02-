@@ -1,24 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* For small screens (mobile) */
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Make sure no elements exceed the screen width */
+  .your-class {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Optional: Adjust the height or padding of elements */
+  .your-element {
+    height: auto;
+    padding: 10px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} 
+/* For medium and large screens */
+@media (min-width: 641px) {
+  body {
+    overflow-x: visible; /* Allow horizontal scrolling on larger screens */
+  }
+}
 
 
 
@@ -29,13 +36,31 @@ body {
 
 
 
+/* Global Styles to Prevent Scrolling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+}
 
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
-
-
-
-
-
-
-
-
+/* For mobile devices */
+@media (max-width: 640px) {
+  body {
+    overflow: hidden; /* Prevent any scrolling */
+    position: fixed;  /* Fix the body position to avoid scrolling */
+    width: 100%;
+  }
+  
+  /* Adjust container or elements to fit within screen */
+  .container, .your-class, .your-element {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
